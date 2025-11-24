@@ -1,7 +1,7 @@
 package org.lifehive;
 
-public class Laptop {
+public class Laptop implements Computer {
     public void start() {
-        System.out.println("Let's get the party started");
+        System.out.println("Let's get the Laptop started");
     }
 }

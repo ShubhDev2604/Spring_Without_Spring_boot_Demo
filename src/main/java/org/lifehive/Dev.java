@@ -7,26 +7,25 @@ public class Dev {
         return objNo;
     }
 
+    public Dev(Computer com) {
+        this.com = com;
+    }
+
     public void setObjNo(int objNo) {
         this.objNo = objNo;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
-    }
-
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
-    }
-
-    public Dev(int objNo, Laptop laptop) {
-        this.objNo = objNo;
-        this.laptop = laptop;
-        System.out.println("Hii Baby... I am Object no." + objNo);
-    }
-
     private int objNo;
-    private Laptop laptop;
+
+    public Computer getCom() {
+        return com;
+    }
+
+    public void setCom(Computer com) {
+        this.com = com;
+    }
+
+    private Computer com;
     Dev() {
         objCount++;
         objNo = objCount;
@@ -34,6 +33,6 @@ public class Dev {
     }
     public void build() {
         System.out.println("Hii Dev...I am using object no. " + objNo);
-        laptop.start();
+        com.start();
     }
 }
